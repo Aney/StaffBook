@@ -1,0 +1,9 @@
+# StaffBook
+
+This was built on Ubuntu with a typical LAMP stack including Apache, MySQL 8.0 and PHP.
+
+# Add staff
+
+If the above wasn't used do as below in SQL.
+
+CREATE TABLE staff (id INT AUTO_INCREMENT NOT NULL, firstname VARCHAR(255) NOT NULL, lastname VARCHAR(255) NOT NULL, dob DATE NOT NULL, email VARCHAR(255) NOT NULL, PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8mb4 COLLATE `utf8mb4_unicode_ci` ENGINE = InnoDB;

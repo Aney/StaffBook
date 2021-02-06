@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello{% endblock %}
+
+{% block body %}
+<main class="example-wrapper">
+	<h1>Hello!</h1>
+
+	{{ form(form) }}
+	<table>
+		<thead>
+			<tr>
+				<th><p>First name:</p></th>
+				<th><p>Last name:</p></th>
+				<th><p>Date of birth:</p></th>
+				<th><p>Email address:</p></th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for staffMember in staff %}
+			<tr>
+				<td><p>{{ staffMember.Firstname}}</p></th>
+				<td><p>{{ staffMember.Lastname}}</p></th>
+				<td><p>{{ staffMember.Dob|date("d-m-Y")}}</p></th>
+				<td><p>{{ staffMember.Email}}</p></th>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+</main>
+{% endblock %}
