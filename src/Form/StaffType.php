@@ -24,7 +24,8 @@ class StaffType extends AbstractType
 			'html5' => false,
 			'format' => 'dd/MM/yy',
 			'attr' => [
-				'placeholder' => 'DD/MM/YY'
+				'placeholder' => 'DD/MM/YY',
+				'maxlength' => 8,
 			],
 			'constraints' => [
 				new NotBlank(),

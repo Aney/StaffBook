@@ -1,3 +1,4 @@
+/* Default Wrapper, should really gut this */
 .example-wrapper { 
 	margin: 1em auto;
 	max-width: 800px;
@@ -9,13 +10,7 @@
 	padding: 2px 6px; 
 }
 
-form{ 
-	background: #DEF2F9;
-	margin: 1em 4em;
-	padding: 4em;
-	text-align: center;
-}
-
+/* Notifications */
 .error, .success{
 	margin: 0 4em;
 	padding: 1em;
@@ -27,6 +22,19 @@ form{
 .error{ background: #b3230c;}
 .success{ background: green;}
 
+
+/* Form */
+form{ 
+	background: #DEF2F9;
+	margin: 2em 3em;
+	padding: 2em 0;
+	text-align: center;
+}
+
+form div div{
+	margin: 0.5em;
+}
+
 form h1 { 
 	color: #124F7B;
 	margin: 0;
@@ -35,6 +43,24 @@ form h1 {
 form input { 
 	border: 1px solid #00A9C3;
 	padding: 0.8em;
+	width: 25em;
+	display:inline-block; 
+	*display: inline;     /* for IE7*/
+	zoom:1;              /* for IE7*/
+}
+label{ 
+	text-align: right;
+	font-weight: bold;
+	margin-right: 1em;
+	display:inline-block;
+	width: 8em;
+	*display: inline;     /* for IE7*/
+	zoom:1;              /* for IE7*/
+}
+label:after { content: ":"; }
+label, input {
+	vertical-align: middle; 
+	color: #124F7B;
 }
 form button{
 	background: #F15A25;
@@ -42,18 +68,6 @@ form button{
 	color: #FFF;
 	padding: 0.5em 1.5em;
 	border-radius: 0.2em;
-}
-label{ 
-	text-align: right;
-	display: inline-block; 
-	font-weight: bold;
-}
-label, input {
-	vertical-align: middle; 
-	color: #124F7B;
-}
-button {
-	margin-left: 10%;
 	font-weight: bold;
 }
 
@@ -81,5 +95,6 @@ table td p{
 }
 table th p, table td p{
 	margin: 0;
+	margin-left: 0.25em;
 	font-weight: bold;
 }

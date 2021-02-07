@@ -10,8 +10,6 @@ const jsError = document.getElementById('jsError')
 
 // Prevent Submit unless the front-end validation is correct.
 // This could be ruined by disabling JS however
-// Not a back-end Validation substitute
-// Long comment, no reason
 form.addEventListener('submit', (eventy) => {
 
 	let errors = []
@@ -29,15 +27,16 @@ form.addEventListener('submit', (eventy) => {
 
 	// DOB
 	if (!validateDOB(dob.value)){
-		errors.push('dd/mm/yy')
+		errors.push('Invalid DOB, please use dd/mm/yy format')
 	}
 
 	// Email Validation
 	if (!validateEmail(email.value)){
-		errors.push('email invalid, try string@string.string')	
+		errors.push('Email invalid, try string@string.string')	
 	}
+
 	if (errors.length > 0){
-		jsError.innerText = errors.join(', ')
+		jsError.innerText = errors.join('; ')
 		jsError.style.display= "block";
 		//window.alert(errors.join(', '));
 		eventy.preventDefault();
