@@ -11,13 +11,15 @@
 }
 
 /* Notifications */
+#jsError{
+	display: none;
+}
 .error, .success{
 	margin: 0 4em;
 	padding: 1em;
 	color: white;
 	border-radius: 0.2em;
 	font-weight: bold;
-	display: none;
 }
 .error{ background: #b3230c;}
 .success{ background: green;}
