@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use App\Repository\StaffRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Validation;
 
 /**
  * @ORM\Entity(repositoryClass=StaffRepository::class)

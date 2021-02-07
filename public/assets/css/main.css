@@ -1,0 +1,85 @@
+.example-wrapper { 
+	margin: 1em auto;
+	max-width: 800px;
+	width: 95%;
+	font: 12px sans-serif;
+}
+.example-wrapper code {
+	background: #F5F5F5;
+	padding: 2px 6px; 
+}
+
+form{ 
+	background: #DEF2F9;
+	margin: 1em 4em;
+	padding: 4em;
+	text-align: center;
+}
+
+.error, .success{
+	margin: 0 4em;
+	padding: 1em;
+	color: white;
+	border-radius: 0.2em;
+	font-weight: bold;
+	display: none;
+}
+.error{ background: #b3230c;}
+.success{ background: green;}
+
+form h1 { 
+	color: #124F7B;
+	margin: 0;
+	margin-bottom: 1em;
+}
+form input { 
+	border: 1px solid #00A9C3;
+	padding: 0.8em;
+}
+form button{
+	background: #F15A25;
+	border: none;
+	color: #FFF;
+	padding: 0.5em 1.5em;
+	border-radius: 0.2em;
+}
+label{ 
+	text-align: right;
+	display: inline-block; 
+	font-weight: bold;
+}
+label, input {
+	vertical-align: middle; 
+	color: #124F7B;
+}
+button {
+	margin-left: 10%;
+	font-weight: bold;
+}
+
+/* Staff Table */
+table{ 
+	width: 100%;
+	background: #124F7B;
+	border-collapse: collapse;
+}
+table tbody tr:nth-child(even){ 
+	background: #FFF; 
+}
+table tbody tr:nth-child(odd){ 
+	background: #DEF2F9; 
+}
+table th, table td{ 
+	text-align: left;
+	padding: 0.75em 0 0.75em 1em;
+}
+table th p{ 
+	color: #00A9C3; 
+}
+table td p{ 
+	color: #124F7B; 
+}
+table th p, table td p{
+	margin: 0;
+	font-weight: bold;
+}

@@ -4,9 +4,21 @@
 
 {% block body %}
 <main class="example-wrapper">
-	<h1>Hello!</h1>
 
-	{{ form(form) }}
+	{% for message in app.flashes('success') %}
+		<p class="success">{{ message }}</p>
+	{% endfor %}
+
+	{% for message in app.flashes('error') %}
+		<p class="error">{{ message }}</p>
+	{% endfor %}
+
+	<p id="jsError" class="error"></p>
+
+	{{ form_start(form) }}
+		<h1>Employees</h1>
+		{{ form(form) }}
+	{{ form_end(form) }}
 	<table>
 		<thead>
 			<tr>

@@ -20,3 +20,7 @@ Run following commands to generate DB, etc.
 
 `php bin/console doctrine:database:create`
 `php bin/console doctrine:schema:create`
+
+Access via the server @ http://<host>/symf/public/index.php/hellouser currently, as no virtual hosts/sites have been setup.
+
+Or access on the local machine by running `symfony server:start` and `symfony open:local`

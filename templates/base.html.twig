@@ -4,19 +4,8 @@
         <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{% block title %}Welcome!{% endblock %}</title>
-
-	<style>
-		.example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-		.example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-
-		table{ background: blue;}
-		table tbody tr:nth-child(even){ background: #eee; }
-		table tbody tr:nth-child(odd){ background: #aaa; }
-		table th p{ color: orange; }
-		table td p{ color: red; }
-
-	</style>
-
+	<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/main.css') }}">
+	<script defer src="{{ asset('assets/js/validation.js') }}"></script>
         {% block stylesheets %}{% endblock %}
 
         {% block javascripts %}{% endblock %}
