@@ -42,6 +42,11 @@ form h1 {
 	margin: 0;
 	margin-bottom: 1em;
 }
+#staff {
+	text-align: left;
+	margin: 0 auto;
+	width: 80%;
+}
 form input { 
 	border: 1px solid #00A9C3;
 	padding: 0.8em;
@@ -49,6 +54,9 @@ form input {
 	display:inline-block; 
 	*display: inline;     /* for IE7*/
 	zoom:1;              /* for IE7*/
+}
+#staff_dob {
+	width: 12em;
 }
 label{ 
 	text-align: right;
@@ -71,6 +79,7 @@ form button{
 	padding: 0.5em 1.5em;
 	border-radius: 0.2em;
 	font-weight: bold;
+	margin-left: 8em;
 }
 
 /* Staff Table */

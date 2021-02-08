@@ -5,6 +5,7 @@ namespace App\Entity;
 use App\Repository\StaffRepository;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Validation;
+use Symfony\Component\Validator\Constraints as Validity;
 
 /**
  * @ORM\Entity(repositoryClass=StaffRepository::class)
@@ -20,11 +21,13 @@ class Staff
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Validity\NotBlank()
      */
     private $firstname;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Validity\NotBlank()
      */
     private $lastname;
 
@@ -35,6 +38,8 @@ class Staff
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Validity\NotBlank()
+     * @Validity\Email()
      */
     private $email;
 
