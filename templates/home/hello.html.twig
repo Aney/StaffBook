@@ -5,6 +5,7 @@
 {% block body %}
 <main class="example-wrapper">
 
+	<section class="form">
 	{% for message in app.flashes('success') %}
 		<p class="success">{{ message }}</p>
 	{% endfor %}
@@ -13,12 +14,41 @@
 		<p class="error">{{ message }}</p>
 	{% endfor %}
 
+
+
 	<p id="jsError" class="error"></p>
 
 	{{ form_start(form) }}
 		<h1>Employees</h1>
-		{{ form(form) }}
+		<div class="form_data">
+			<div class="form_col">
+			{{ form_label(form.firstname, "First Name") }}
+			{{ form_widget(form.firstname) }}
+			</div>
+
+			<div class="form_col">
+			{{ form_label(form.lastname, "Last Name") }}
+			{{ form_widget(form.lastname) }}
+			</div>
+
+			<div class="form_col">
+			{{ form_label(form.dob, "Date of birth") }}
+			{{ form_widget(form.dob) }}
+			</div>
+
+			<div class="form_col">
+			{{ form_label(form.email, "Email Address") }}
+			{{ form_widget(form.email) }}
+			</div>
+
+			<div class="form_col">
+			{{ form_widget(form.submit) }}
+			</div>
+		</div>
 	{{ form_end(form) }}
+	</section>
+
+	<div class="test">
 	<table>
 		<thead>
 			<tr>
@@ -39,5 +69,6 @@
 			{% endfor %}
 		</tbody>
 	</table>
+	</div>
 </main>
 {% endblock %}

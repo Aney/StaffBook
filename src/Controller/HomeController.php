@@ -71,7 +71,7 @@ class HomeController extends AbstractController
 			// Invalid
 			$this->addFlash(
 				'error',
-				'Invalid Test'
+				'Invalid Staff Details'
 			);
 		}
 	}

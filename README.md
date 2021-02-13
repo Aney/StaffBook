@@ -10,8 +10,10 @@ Change variables in `.env` to match your username/login/host, etc. I used root/p
 
 Run following commands to generate DB, etc.
 
-'composer install'
+`composer install`
+
 `php bin/console doctrine:database:create`
+
 `php bin/console doctrine:schema:create`
 
 Access via the server @ `http://<host>/symf/public/index.php/hellouser` currently, as no virtual hosts/sites have been setup.
@@ -23,17 +25,15 @@ Or access on the local machine by running `symfony server:start` and `symfony op
 ## Todo
 
 - Correctly format form (css table, css grid, etc)
-- Back end validation
 - Improve Front end validation, and make defensive
-- Move things into individual locations
-- More liquid layout, or at least media queries for <600px devices
-- Form Translation (Fix errors)
-- Auto-install script
+- DOB Backend-Validation
+	- Prevent from auto-filling 01/01/70 if a datetime wasn't entered
+	- Potentially the best fix is to remove entity and use a custom data object
+- Move things into individual locations *clean up*
 
 ## Extra/Ideas for further development
 
-- Remove individual div tags for form elements
-- Custom form via twig
 - Extra entities for relationships, ie. authorisation levels
 - CRUD for managing staff relationships
 - Include AJAX
+- Auto-install script
