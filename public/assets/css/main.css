@@ -57,34 +57,46 @@ form h1 {
 	width: 75%;
 }
 
-.form_col{
+.form_row{
 	width: 100%;
 	margin: 1em 0;
 	/*display: flex;*/
 }
 
-.form_row{
+.form_col{
 	display: inline-block;
+}
+.form_col_1{
+	display: inline-block;
+	width: 23%;
+	margin-right: 1%;
+}
+.form_col_2{
+	display: inline-block;
+	width: 70%;
+}
+.form_col_2 ul{
+	padding: 0;
+	margin: 0;
+	list-style-position: inside;
 }
 
 input { 
 	border: 1px solid #00A9C3;
-	padding: 2%;
+	width: 94%;
+	padding: 3%;
 	display: inline-block;
-	width: 70%;
 	*display: inline;	/* for IE7 */
 	zoom:1;			/* for IE7 */
 }
 
 #staff_dob{
-	width: 35%;
+	width: 45%;
 }
 
 label{ 
-	/* 24% */
-	width: 23%;
+	width: 100%;
 	font-weight: bold;
-	margin-right: 1%;
 	text-align: right;
 	display: inline-block;
 	*display: inline;	/* for IE7 */
@@ -171,15 +183,10 @@ table th p, table td p{
 		font-size: 1.2em;
 		margin: 0;
 	}
+	.form_col_1, .form_col_2{ width: 80%; }
+	#staff_dob{ width: 94%; }
 	input, label{
 		font-size: 1.3em;
-		width: 80%;
-	}
-	input{
-		padding: 3%;
-	}
-	#staff_dob{
-		width: 80%;
 	}
 	label{
 		margin: 0;
@@ -187,7 +194,7 @@ table th p, table td p{
 	.form_data{
 		width: 100%;
 	}
-	.form_col{
+	.form_row{
 		text-align: center;
 	}
 }

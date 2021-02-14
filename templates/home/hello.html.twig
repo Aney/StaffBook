@@ -15,33 +15,51 @@
 	{% endfor %}
 
 
-
 	<p id="jsError" class="error"></p>
 
 	{{ form_start(form) }}
 		<h1>Employees</h1>
 		<div class="form_data">
-			<div class="form_col">
+			<div class="form_row">
+			<div class="form_col_1">
 			{{ form_label(form.firstname, "First Name") }}
+			</div>
+			<div class="form_col_2">
+			{{ form_errors(form.firstname) }}
 			{{ form_widget(form.firstname) }}
 			</div>
+			</div>
 
-			<div class="form_col">
+			<div class="form_row">
+			<div class="form_col_1">
 			{{ form_label(form.lastname, "Last Name") }}
+			</div>
+			<div class="form_col_2">
 			{{ form_widget(form.lastname) }}
 			</div>
+			</div>
 
-			<div class="form_col">
+			<div class="form_row">
+			<div class="form_col_1">
 			{{ form_label(form.dob, "Date of birth") }}
+			</div>
+			<div class="form_col_2">
+			{{ form_errors(form.dob) }}
 			{{ form_widget(form.dob) }}
 			</div>
-
-			<div class="form_col">
-			{{ form_label(form.email, "Email Address") }}
-			{{ form_widget(form.email) }}
 			</div>
 
-			<div class="form_col">
+			<div class="form_row">
+			<div class="form_col_1">
+			{{ form_label(form.email, "Email Address") }}
+			</div>
+			<div class="form_col_2">
+			{{ form_errors(form.email) }}
+			{{ form_widget(form.email) }}
+			</div>
+			</div>
+
+			<div class="form_row">
 			{{ form_widget(form.submit) }}
 			</div>
 		</div>

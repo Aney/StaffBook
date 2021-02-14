@@ -46,11 +46,14 @@ class HomeController extends AbstractController
 	// Handle Request. Get/Post, etc
 	$form->handleRequest($request);
 
+
 	// TODO: Make sure isValid actually validates
 	// Needs same checks as JS, and also needs to convert datatypes, etc
 	// E.g. Needs the YY to be 2000s from current year (21) and 90s after (22...)
 
 	if ($form->isSubmitted()){
+			var_dump($staff);
+			die;
 		if ($form->isValid()){
 			// Testing
 			//var_dump($staff);
